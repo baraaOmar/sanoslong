@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=charm|Arizonia|Artifika|Caveat|Courgette|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Kaushan+Script|Niconne|Oleo+Script+Swash+Caps|Pacifico|Playball|Qwigley|Satisfy|Seaweed+Script|Sofia|Srisakdi|Tangerine&display=swap');
+
+.h-div a{
+    color:rgb(177, 121, 121);
+    font:bolder;
+    font-family: 'sofia';
+    font-size: 25px;
+    background-color: seashell;
+}
+
+
+.profile li a{
+  font-family: 'sofia';
+  color: rgb(177, 121, 121);
+  font-size:25px;
+background-color: seashell;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11*/
+.in-up-container{
+
+display: flex;
+justify-content: center;
+}
+.left{
+ color: rgb(177, 121, 121);
+ font-size:20px;
+ font:bolder;
+ font-family: 'sofia';
+ margin-bottom: 30px;
+ border:5px solid rgb(177, 121, 121);
+}
+
+.right{
+  
+ color: rgb(177, 121, 121);
+ font-size:20px;
+ font:bolder;
+ font-family: 'sofia';
+ margin-bottom: 30px;
+ border:5px solid rgb(177, 121, 121);
+}
+.fi{
+  align-items: center;
+  display: flex;
+  padding-left: 40px;
+  margin-left: 30% !important
+}
+
+.form div label, .form2 div button, a {
+  text-align: center;
+  font-family: 'sofia';
+  margin-bottom: 18px;
+  background-color: seashell;
+  border: none;
+  white-space: nowrap; 
+  align-items: center;
+  display: flex;
+  
+}
+.sign_inCont{
+	
+}
+/*.form div label,.form2 div button,a{
+    text-align: center ;
+    font-family: 'sofia';
+    margin-bottom: 18px;
+    background-color: seashell;
+    border: none;
+  }*/
+  button{
+    min-width: 100px;
+  }
+  .form div input ,form div button,form div label{
+ 
+      font-family: 'sofia';
+      margin-bottom: 20px;
+     
+    }
+    .form2 div input{
+        outline: none;
+        border: none;
+        background-color: seashell;
+        border-bottom: 1px  solid black;
+        margin-bottom: 20px;
+        max-width: 200px;;
+        min-width: 100px;;
+      }
+      .form2 div label {
+        margin-bottom: 26px;
+    }
+.form div input{
+    outline: none;
+    border: none;
+    background-color: seashell;
+    border-bottom: 1px  solid black;
+}
+.left ,#l-img,.right,#r-img{
+   overflow: hidden;
+   
+}
+.form div , .form2 div{
+    margin:  auto;
+}
+.form div a{
+    color: black;
+  margin-right: 5px;
+  float: left;
+  
+}
+.right,#r-img{
+    
+    min-height: 488px;
+    min-width: 299px;;
+    max-width: 470px;;
+    margin-left: 10%;
+    border: 100%;
+}
+.left,#l-img{
+   
+  max-height: 488px;;
+  min-height: 488px;
+  min-width: 300px;;
+  max-width: 470px;;
+  border: 100%;
+}
+@media (max-width:650px){
+    .right,#r-img{
+      visibility: visible;
+     display: none;
+
+    }
+    .left,#l-img{
+        margin-left: 20%;
+    }
+  }
+  @media (max-width:1220px){
+   
+    .right,#r-img{
+        margin-left: 0px;;
+    }
+    
+  }
+  @media (max-width:730px){
+   
+    .l-sign{
+        
+        padding-right: 40px;
+    }
+    
+  }
+  .l-sign{
+   
+ }
+ .form button{
+    background-color: seashell;
+    border: none;
+    align-items: center;
+    display: flex;
+    margin-bottom: auto;
+ }
+.form2 input{
+ 
+    font-family: 'sofia';
+    margin-bottom: 12px;
+  }
+  input[type=radio] {
+    
+    line-height: normal;
+   
+    float: left;
+}
+
+/*
+#s1{
+    margin-left: 3%;
+}
+#s2{
+    margin-left: 3.4%;
+}
+#s3{
+    margin-left: 10%;
+}
+#s4{
+    margin-left: 11%;
+}
+#s5{
+    margin-left: 12.6%;
+}
+#s6{
+    margin-left: 10.6%;
+}
+#s7{
+    margin-left: 6.5%;
+}
+#p{
+    margin-left: 4.7%;
+}

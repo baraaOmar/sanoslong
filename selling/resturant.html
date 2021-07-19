@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>resturant menue</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!---   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+--->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mainPortal.css">
+  <link rel="stylesheet" href="css/yellowScroll.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="Login_v15/css/main.css">
+  <link rel="stylesheet" href="Login_v15/css/util.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* The actual popup */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    @media (min-width: 768px) {
+      #ingr {
+        margin-left: 20%;
+
+      }
+    }
+
+    @media (max-width: 767px) {
+      #ingr {
+        margin-left: 15px;
+
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"style="position: relative;overflow-x:hidden;background-color:#d3d3d31c !important" >
+  <div id="Hide_body" style="display: none;
+
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;content: none;position: absolute;
+  background-color: #000000c7;"></div>
+  <div class="site-wrap" style="width:100%;">
+
+
+    <div class="site-mobile-menu site-navbar-target"
+      style="box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+        <div style="display: inline-flex">
+          <div style="display: inline-block;padding-top: 23px">
+            <li style="list-style: none;"><img src="images/p5.jpg" class="rounded-circle" alt=""
+                style="background-size:cover;width:60px;height: 70;"></li>
+          </div>
+          <div style="display: inline-block">
+            <li style="list-style: none;margin-top: 25px;"><a href="#about-section" class="nav-link"
+                style="color: black">Baraa jamal omar</a></li>
+          </div>
+        </div>
+
+      </div>
+      <div class="site-mobile-menu-body">
+        <div style="display: inline-flex;position: sticky;
+          display: inline-flex;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;margin-left: -10px;
+          background-color: white;">
+          <li style=" display:inline-block; "><a href="#home-section" class="nav-link" style="color: black"><i
+                class="fas fa-home"></i></a></li>
+          <li style=" display:inline-block; "><a href="#about-section" class="nav-link" style="color: black"><i
+                class="fab fa-facebook-messenger"></i></a></li>
+          <li style=" display:inline-block; "><a onclick="notifdisplay()" href="#about-section" class="nav-link"
+              style="color: black"><i class="fas fa-bell"></i></a></li>
+
+          <li style=" display:inline-block; "><a onclick="notifdisplay_cart()" href="#home-section" class="nav-link"
+              style="color: black"><i class="fas fa-user-cog"></i></a></li>
+          <li style=" display:inline-block; "><a onclick="basket_cart()" href="#home-section" class="nav-link"
+              style="color: black"><i class="fas fa-shopping-cart"></i></a></li>
+
+          <li style=" display:inline-block; "><a href="#products-section" class="nav-link" style="color: black"><i
+                class="fas fa-sign-out-alt"></i></a></li>
+
+          <div id="notifdisplay" data-aos="fade-up"
+            style="display:none;position: absolute;overflow-y: scroll;height: 300px;top: 50px;background-color: white !important;border: 2px solid #21252952;width: 90%">
+            <div style="position: sticky;top: 0px;border-bottom: 1px solid #2125295c;margin-bottom: 10px;
+  bottom: 0px;background-color: white">
+              <h6 style="color: black;"><i class="fas fa-bell" style="margin-right: 5px;"></i>Notification</h6>
+            </div>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i
+                  style="font-size: 16px" class="far fa-envelope"></i></div>
+              <div class="col-sm-10" style="margin-left: 17px;
+   border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">22/33/2000</p>
+                </div>
+                <div>
+                  <p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p>
+                </div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i
+                  style="font-size: 16px" class="far fa-envelope"></i></div>
+              <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first
+                    notification</p>
+                </div>
+                <div>
+                  <p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p>
+                </div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i
+                  style="font-size: 16px" class="far fa-envelope"></i></div>
+              <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first
+                    notification</p>
+                </div>
+                <div>
+                  <p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p>
+                </div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i
+                  style="font-size: 16px" class="far fa-envelope"></i></div>
+              <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first
+                    notification</p>
+                </div>
+                <div>
+                  <p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p>
+                </div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i
+                  style="font-size: 16px" class="far fa-envelope"></i></div>
+              <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first
+                    notification</p>
+                </div>
+                <div>
+                  <p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p>
+                </div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i
+                  style="font-size: 16px" class="far fa-envelope"></i></div>
+              <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-size: 12px;margin-bottom: 0px;color: black;font-weight: bold;">Hello im the first
+                    notification</p>
+                </div>
+                <div>
+                  <p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p>
+                </div>
+              </div>
+            </li>
+
+          </div>
+          <div id="notifdisplay_cart" data-aos="fade-up"
+            style="display:none;position: absolute;overflow-y: scroll;height: 300px;top: 50px;background-color: white !important;border: 2px solid #21252952;width: 90%">
+            <div style="position: sticky;top: 0px;border-bottom: 1px solid #2125295c;margin-bottom: 10px;
+    bottom: 0px;background-color: white">
+              <h6 style="color: black;"><i class="fas fa-bell" style="margin-right: 5px;"></i>Cart</h6>
+            </div>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-3" style="display: inline-block;top: -11px;">
+                <p style="font-size: 1px">Price:33$ <br>
+                  Discount:33% <br>
+                  Total:444$
+                </p>
+              </div>
+              <div class="col-sm-8" style="margin-left: 17px;
+     border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first Meal
+                    burger tea salad limon burger tea salad limon</p>
+                </div>
+                <div><input type="number" value="1" style="width: 38px;
+      height: 20px;"></div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-3" style="display: inline-block;top: -11px;">
+                <p style="font-size: 1px">Price:33$ <br>
+                  Discount:33% <br>
+                  Total:444$
+                </p>
+              </div>
+              <div class="col-sm-8" style="margin-left: 17px;
+      border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first Meal
+                    burger tea salad limon burger tea salad limon</p>
+                </div>
+                <div><input type="number" value="1" style="width: 38px;
+       height: 20px;"></div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-3" style="display: inline-block;top: -11px;">
+                <p style="font-size: 1px">Price:33$ <br>
+                  Discount:33% <br>
+                  Total:444$
+                </p>
+              </div>
+              <div class="col-sm-8" style="margin-left: 17px;
+      border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first Meal
+                    burger tea salad limon burger tea salad limon</p>
+                </div>
+                <div><input type="number" value="1" style="width: 38px;
+       height: 20px;"></div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-3" style="display: inline-block;top: -11px;">
+                <p style="font-size: 1px">Price:33$ <br>
+                  Discount:33% <br>
+                  Total:444$
+                </p>
+              </div>
+              <div class="col-sm-8" style="margin-left: 17px;
+      border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first Meal
+                    burger tea salad limon burger tea salad limon</p>
+                </div>
+                <div><input type="number" value="1" style="width: 38px;
+       height: 20px;"></div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-3" style="display: inline-block;top: -11px;">
+                <p style="font-size: 1px">Price:33$ <br>
+                  Discount:33% <br>
+                  Total:444$
+                </p>
+              </div>
+              <div class="col-sm-8" style="margin-left: 17px;
+      border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first Meal
+                    burger tea salad limon burger tea salad limon</p>
+                </div>
+                <div><input type="number" value="1" style="width: 38px;
+       height: 20px;"></div>
+              </div>
+            </li>
+            <li
+              style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+              <div class="col-sm-3" style="display: inline-block;top: -11px;">
+                <p style="font-size: 1px">Price:33$ <br>
+                  Discount:33% <br>
+                  Total:444$
+                </p>
+              </div>
+              <div class="col-sm-8" style="margin-left: 17px;
+      border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                <div>
+                  <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first Meal
+                    burger tea salad limon burger tea salad limon</p>
+                </div>
+                <div><input type="number" value="1" style="width: 38px;
+       height: 20px;"></div>
+              </div>
+            </li>
+
+          </div>
+
+        </div>
+        <div style="margin-bottom: 10px;background: white !important;
+          color: black !important;
+          border: none;"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Services</a></div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Resturant
+            Menue</a></div>
+
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Add Meal Form</a>
+        </div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Customer
+            Orders</a></div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Resturant
+            Financial Accounts</a></div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Add Discount</a>
+        </div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Remove
+            Discount</a></div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0"
+            style="color: black">Earnings/Customers number</a></div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Best-selling
+            meals</a></div>
+        <div style="margin-bottom: 10px"> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Subscriber</a>
+        </div>
+
+        <div> <a href="#" class="btn  mr-1 rounded-0" style="color: black">Subscribtion Form</a></div>
+
+      </div>
+
+    </div>
+
+
+    <div class="top-bar py-3 bg-light" id="home-section">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 text-left">
+            <ul class="social-media">
+              <li><a href="#" class=""><span class="icon-facebook"></span></a></li>
+              <li><a href="#" class=""><span class="icon-twitter"></span></a></li>
+              <li><a href="#" class=""><span class="icon-instagram"></span></a></li>
+              <li><a href="#" class=""><span class="icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <p class="mb-0 float-right">
+              <span class="mr-3"><a href="tel:0597257188"> 07701234567 > <span class="icon-phone mr-2"
+                    style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">(+1)
+                    234 5678 9101</span></a></span>
+              <span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span
+                    class="d-none d-lg-inline-block text-black">shop@yourdomain.com</span></a></span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class=" py-4  js-sticky-header site-navbar-target " id="header_display" role="banner"
+      style="position: absolute;width: 100%;background-color: white">
+
+      <div class="container" style="position: relative;">
+        <!--CART-->  
+        <div class="container" id="basket-cart" style=" position: absolute ;height: 400px;width: 100%;
+        margin-top:200px; background-color:transparent; margin-top: 72px;display:none; ">
+     <div  style="margin-bottom: 270px;">  
+       <form class="cart_bas " style="background-image: url(images/bas.gif);overflow-y: scroll;overflow-x: scroll;background-color:black;height: 400px;;" >
+        <button   style="border-radius: 0px 18px 0px 18px;;background-color: white;size: 30px;;border: none;size: 20px"><i class="fas fa-shopping-cart"style="color:black"></i></button>
+      <div style="display: inline-block;margin-left: 20%;border-radius: 0px 18px 0px 18px;background-color: white;">  <span class="bold_"style="color: black;font-weight: bolder;">Total :</span> <span class="bold_"style="color: white;font-weight: bolder;">3909$</span></div>
+        <div style="display: inline-block;border-radius: 0px 18px 0px 18px;background-color: black;margin-left: 20%;margin-top: 4px;
+        margin-bottom: 4px;"><h2 class="text-center" style="color: white;font-weight: bolder;">Cart</h2></div>
+        <div style="display: inline-block;color: black;float: right;padding: 4px"><i class="fas fa-times" onclick="basket_close()"></i></div>
+    
+        <table style="width: 100%">
+                <tr>
+
+                  <th>product</th>
+                  <th>amount</th>
+                  <th>Discount</th>
+                  <th>price</th>
+                  <th>total</th>
+                  <th>Extra's</th>
+                  <th></th>
+                </tr>
+                <tr>
+
+                  <td>Tost burger , salad ,lemon ,tea ,chicken</td>
+                  <td><input type="number" placeholder="1" style="width: 35px"></td>
+
+                  <td>50%</td>
+                  <td>56$</td>
+                  <td>1048$</td>
+                  <td>extra salad and tomato affge gfdg dd ghfsextra salad and tomato affge gfdg dd ghfs extra salad and
+                    tomato affge gfdg dd ghfs</td>
+                  <td style="width: 90px;height: 100px;"><i class="fas fa-minus-circle"></i></td>
+
+                </tr>
+                <tr>
+                  <td>Tost burger , salad ,lemon ,tea ,chicken</td>
+                  <td>3</td>
+
+                  <td>50%</td>
+                  <td>56$</td>
+                  <td>1048$</td>
+                  <td>extra salad and tomato affge gfdg dd ghfsextra salad and tomato affge gfdg dd ghfs extra salad and
+                    tomato affge gfdg dd ghfs</td>
+                  <td style="width: 90px;height: 100px;"><i class="fas fa-minus-circle"></i></td>
+
+                </tr>
+
+              </table>
+
+            </form>
+          </div>
+          <!--CART-->
+
+        </div>
+
+        <div class="limiter" id="editDiv" style="display: none">
+          <div class="container-login100" style="background-color: #8080800d;">
+            <div id="back_img_color" class="wrap-login100" style="background-image: url(images/daily.jpg);background-image: url(images/daily.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position-x: -10px; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position: center center;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+           
+
+              <form class="login100-form " id="logInForm" novalidate>
+              
+                <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                  <span style="color: lavenderblush" class="label-input100">Name</span>
+                  <input style="background-color: lavenderblush;background-color: transparent;" class="input100"
+                    type="text" name="pass" id="UserName">
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                  <span style="color: lavenderblush" class="label-input100">calory</span>
+                  <input style="background-color: lavenderblush;background-color: transparent;" class="input100"
+                    type="text" name="pass" id="UserName">
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                  <span style="color: lavenderblush" class="label-input100">calory</span>
+                  <input style="background-color: lavenderblush;background-color: transparent;" class="input100"
+                    type="text" name="pass" id="UserName">
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                  <span style="color: lavenderblush" class="label-input100">price</span>
+                  <input style="background-color: lavenderblush;background-color: transparent;" class="input100"
+                    type="text" name="pass" id="UserName">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="flex-sb-m w-full " style="margin-bottom: 3px">
+                  <div class="contact100-form-checkbox">
+
+                    <label id="invalid_log_label" style="color: red;
+                font-size: 11px;">
+                      Invalid
+                    </label>
+                  </div>
+
+
+                </div>
+
+
+                <div class="container-login100-form-btn">
+                  <button style="z-index: 1;margin-left: -12%" onclick="logIn()" class="login100-form-btn">
+                    Login
+                  </button>
+                </div>
+              </form>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container col-xl-10  col-xs-8" style="margin-top: 100px;position: absolute ;width: 100%;
+    background-color:transparent; display:none; ">
+
+          <form
+            style="background-color:white;;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+
+
+            <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block">
+              <label for="validationTextarea"
+                style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Meal Name</label>
+              <textarea id="mealName" class="form-control is-invalid" id="validationTextarea" placeholder="Meal Name"
+                style="background-color: #ffffffb3;border-color: black !important;margin-left: 15px;border: none;
+        /* border-bottom: black !important; */height: 37px;
+        border-bottom: 1px solid black;"></textarea>
+              <!---    <div class="invalid-feedback">
+         <label for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>  --->
+            </div>
+            <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block">
+              <label for="validationTextarea"
+                style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Price</label>
+              <textarea id="mealPrice" class="form-control is-invalid" id="validationTextarea" placeholder="Price"
+                style="border: none;background-color: #ffffffb3;
+        /* border-bottom: black !important; */height: 37px;
+        border-bottom: 1px solid black;border-color: black !important;margin-left: 15px;"></textarea>
+              <!---    <div class="invalid-feedback">
+         <label for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>  --->
+            </div>
+
+            <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block">
+              <label for="validationTextarea"
+                style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Ingrediant</label>
+              <textarea id="mealIngrediant" class="form-control is-invalid" id="validationTextarea"
+                placeholder="Meal Name" style="background-color: #ffffffb3;border-color: black !important;margin-left: 15px;border: none;
+        /* border-bottom: black !important; */height: 37px;
+        border-bottom: 1px solid black;"></textarea>
+              <!---    <div class="invalid-feedback">
+         <label for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>  --->
+            </div>
+            <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block">
+              <label for="validationTextarea"
+                style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Calory</label>
+              <textarea id="mealCalory" class="form-control is-invalid" id="validationTextarea" placeholder="Price"
+                style="border: none;background-color: #ffffffb3;
+        /* border-bottom: black !important; */height: 37px;
+        border-bottom:1px solid black;border-color: black !important;margin-left: 15px;"></textarea>
+
+            </div>
+            <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 15px">
+              <label for="validationTextarea"
+                style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Type
+              </label>
+
+              <select id="mealType" class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+      /* border-bottom: black !important; */height: 35px;
+      border-bottom:1px solid black;
+      margin-left: 15px;">
+                <option value="">Choose Period</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="invalid-feedback">Example invalid custom select feedback</div>
+            </div>
+            <div class=" col-lg-5 col-xl-5 col-md-10 col-xs-12 " style="display: inline-block;margin-bottom:20px">
+              <label for="validationTextarea"
+                style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">choose image</label>
+
+              <input id="mealImage" type="file" style="border: none;background-color: #ffffffb3;height: 48px;width: 100%;
+        /* border-bottom: black !important; */height: 35px;
+        border-bottom: 1px solid black;border-color: black !important;margin-left: 15px;">
+            </div>
+
+
+
+            <div id="invalid-feedback">
+              <label for="" style="margin-left: 15px;color: red;font-size: 5px"> Please enter a message in the
+                textarea.</label>
+            </div>
+            <a onclick="AddMealRole()" class="btn btn-black mr-1 rounded-0 "
+              style="margin-left:37%;display:inline-block;margin-bottom: 15px;">submit form</a>
+          </form>
+        </div>
+
+
+
+        <!--CART-->
+
+
+
+
+
+
+        <div class="container col-6  col-xs-10" id="warning_rest_Portal" style="margin-left: 25%; position: absolute ;width: 100%;
+    margin-top:200px; background-color:transparent; margin-top: 172px;display:none; ">
+          <div>
+            <form class="cart_bas "
+              style="background-color:white;;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+
+              <div style="display: inline-block;color: black;float:right;padding: 4px;padding-top: 20px"><i onclick="warning_masseges('.')"
+                  class="fas fa-times" ></i></div>
+
+              <label id="text_warning_Msg" style="color:black;font-size: 15px;font-weight: 700;margin-bottom: 30px;padding-left: 20px;padding-bottom: 20px;
+  padding-top: 20px;" for="">please fill date start and end field </label>
+            </form>
+          </div>
+          <!--CART-->
+
+        </div>
+        <div class="container col-6  col-xs-10" id="warning-block_resturaunt_portal" style="margin-left: 25%; position: absolute ;width: 100%;
+   margin-top:200px; background-color:transparent; margin-top: 172px;display:none; ">
+          <div>
+            <form class="cart_bas "
+              style="background-color:white;;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+
+              <div style="display: inline-block;color: black;float: right;padding: 4px"><i onclick="warning_block_resturant_add_meal()" class="fas fa-times"
+                  ></i></div>
+
+              <label id="" style="color:black;font-size: 15px;font-weight: 700;margin-bottom: 30px;padding-left: 5px"
+                for="">Are you sure that you want to add this meal? </label>
+              <div style="margin-bottom: 15px;padding-bottom: 10px;" >
+                <a onclick="addMealForm()" class="btn btn-black mr-1 rounded-0" style="border-radius: 100% !important;
+     width: 1px;
+     height: 1px;margin-left: 15px;
+     padding: 10px;"></a>
+                <label style="display: inline-block">Yes</label>
+
+              </div>
+              <!--- <div class=" custom-switch" style="margin-bottom: 30px">
+   <input type="checkbox" onclick="SubscriptionForm()" class="custom-control-input" id="customSwitch1" style="color: green;margin-left: 20px">  
+ <input type="checkbox" id="scales" name="scales"
+ checked>
+ <label class="custom-control-label" for="customSwitch1">Yes</label>
+ 
+</div> --->
+              <label id="label_add_Meal" style="margin-bottom: 10px;" for=""><i class="far fa-flag" style="color: green;padding-left: 10px;"></i> inserted is done</label>
+            </form>
+          </div>
+          <!--CART-->
+
+        </div>
+
+
+      
+
+
+        <div class="container col-6  col-xs-10" id="warning-block_resturaunt_portal_add_discount" style="margin-left: 25%; position: absolute ;width: 100%;
+        margin-top:200px; background-color:transparent; margin-top: 172px;display:none; ">
+               <div>
+                 <form class="cart_bas "
+                   style="background-color:white;;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+     
+                   <div style="display: inline-block;color: black;float: right;padding: 4px"><i onclick="warning_block_resturaunt_portal_add_discount()" class="fas fa-times"
+                       ></i></div>
+     
+                   <label id="" style="color:black;font-size: 15px;font-weight: 700;margin-bottom: 30px;padding-left: 5px"
+                     for="">Are you sure that you want to add this discount? </label>
+                   <div style="margin-bottom: 15px;padding-bottom: 10px;" >
+                     <a onclick="addDiscount()" class="btn btn-black mr-1 rounded-0" style="border-radius: 100% !important;
+          width: 1px;
+          height: 1px;margin-left: 15px;
+          padding: 10px;"></a>
+                     <label style="display: inline-block">Yes</label>
+     
+                   </div>
+                   <!--- <div class=" custom-switch" style="margin-bottom: 30px">
+        <input type="checkbox" onclick="SubscriptionForm()" class="custom-control-input" id="customSwitch1" style="color: green;margin-left: 20px">  
+      <input type="checkbox" id="scales" name="scales"
+      checked>
+      <label class="custom-control-label" for="customSwitch1">Yes</label>
+      
+     </div> --->
+                   <label id="label_add_Meal" style="margin-bottom: 10px;" for=""><i class="far fa-flag" style="color: green;padding-left: 10px;"></i> inserted is done</label>
+                 </form>
+               </div>
+               <!--CART-->
+     
+             </div>
+     
+      
+
+
+
+        <!--  <div class=" col-xs-9 col-sm-8 "style=" position:absolute; 
+   margin-top:200px; background-color:black; margin-top: 72px;" >
+    <div class="row mx-12  product-item-2 align-items-start" >
+     
+     
+      <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10 ml-auto product-title-wrap"style="height:400px;overflow-y:scroll">
+       <h6 class="font-weight-bold h5">Ingredients</h6>
+        <p class="mb-4 " style="color: white"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i> ores quasi accusantiu iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+       <h6 class="font-weight-bold h5">Calories</h6>
+        <p style="color: white"><i class="fas fa-apple-alt"style="color: darkgreen;font-weight: 900;"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?</p>
+        
+        <div class="mb-4"> 
+          <h3 class="font-weight-bold h5">Price:</h3>
+          <div class="price"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i><del class="mr-2"> $269.00</del> $69.00</div>
+        </div>
+       
+      </div>
+    </div>
+  </div> -->
+        <div class="row align-items-center">
+          <!--style="position: absolute"-->
+
+          <div class="col-6 col-xl-2 col-xs-1">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black mb-0">Sanuslaung<span
+                  class="text-primary">.</span> </a></h1>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3 col-xl-10"
+            style="position: relative; top: 3px;display: inline-block !important;"><a href="#"
+              class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/loga.jpg);" data-aos="fade"
+      data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="row mb-4">
+              <div class="col-md-7">
+                <h1>Sanuslaung Resturant</h1>
+                <p class="mb-5 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea
+                  quo cupiditate facere deleniti fuga officia.</p>
+                <div>
+                  <a href="#"
+                    class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop
+                    Now</a>
+                  <a href="#" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block">Club Membership</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="services-section"
+      style="background-color:white !important;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">Our Healthy Services</h3>
+            <h2 class="section-title mb-3">Our Healthy Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class=" col-md-4  mb-6 mb-lg-6" data-aos="fade-up">
+            <div class="unit-4 d-flex ">
+              <div class="unit-4-icon mr-4"><span class=""><i class="fas fa-apple-alt"></i></span></div>
+              <div>
+                <h3> Restaurant menu </h3>
+                <p style="height: 110px;overflow: auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.</p>
+                <p><button>Order</button></p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-4  mb-6 mb-lg-6" data-aos="fade-up">
+            <div class="unit-4 d-flex ">
+              <div class="unit-4-icon mr-4"><span class=""><i class="fas fa-apple-alt"></i></span></div>
+              <div>
+                <h3> Restaurant Subscription </h3>
+                <p style="height: 110px;overflow: auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.</p>
+                <p><button>Subscribe</button></p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-4  mb-6 mb-lg-6" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class=""><i class="fas fa-apple-alt"></i></span></div>
+              <div>
+                <h3>onLine Shpping</h3>
+                <p style="height: 110px;overflow: auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.</p>
+                <p><button>Order</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-md-4 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class=""><i class="fas fa-apple-alt"></i></span></div>
+              <div>
+                <h3>Diet Subscription</h3>
+                <p style="height: 110px;overflow: auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quis molestiae vitae eligendi at.</p>
+                <p><button>Subscribe</button></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="site-section " id="products-section">
+
+
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <h3 class="section-sub-title">Healthy menue</h3>
+          <h2 class="section-title mb-3">Our Menue</h2>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>-->
+        </div>
+      </div>
+
+
+
+
+      <div id="ourMenue" class="container " style="display: flex;overflow-x: scroll;height:560px;position:relative;">
+
+
+
+        <div class="col-lg-4 col-md-1  col-sm-2 col-xs-2 menue_icon" style="background-color: black;display: inline-block;border-radius:0px 30% 30% 0px;height:320px;margin-top: 100px;margin-right: 18px; top: 30px;
+                    right: 0px;
+                    left: 0px;
+                    bottom: 4px;
+                    position: sticky;
+                    z-index: 1;display: grid;grid-template-rows: 50px 50px 50px 50px 50px 50px;">
+          <button style="background-color: transparent;border: none; margin-left: -20px;" data-toggle="tooltip"
+            data-placement="top" title="soup!"> <img src="images/recipe-soup-icon.png" alt=""></button>
+          <button style="background-color: transparent;border: none; margin-left: -20px;" data-toggle="tooltip"
+            data-placement="top" title="Sweet!"> <img src="images/Cake-Sweet-icon.png" alt=""></button>
+          <button style="background-color: transparent;border: none; margin-left: -20px;" data-toggle="tooltip"
+            data-placement="top" title="Hot Drink!"> <img src="images/coffee-icon.png" alt=""></button>
+          <button style="background-color: transparent;border: none ;margin-left:-20px;" data-toggle="tooltip"
+            data-placement="top" title="Cold Drink!"> <img src="images/drink-icon.png" alt=""></button>
+          <button style="background-color: transparent;border: none; margin-left:-20px;" data-toggle="tooltip"
+            data-placement="top" title="Salad!"> <img src="images/green-salad-icon.png" alt=""></button>
+          <button style="background-color: transparent;border: none; margin-left:-20px;" data-toggle="tooltip"
+            data-placement="top" title="Main meal! "> <img src="images/dinner-icon.png" alt=""></button>
+
+        </div>
+
+        <div class="col-sm-4 col-xs-11 col-md-3 col-lg-3 col-xl-2" style="margin-right:70px;">
+          <div class="product-item">
+            <div class="maincontainer">
+
+              <div class="thecard">
+
+                <div class="thefront ">
+
+                  <img src="images/burger.jpg" alt="Image" class="img-fluid" style="height:200px ;">
+
+
+                </div>
+                <div class="back">
+
+                  <h6 class="font-weight-bold h5" style="color: black">Ingredients</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    ores quasi accusantiu iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+                  <h6 class="font-weight-bold h5" style="color: black">calory</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    1000!</p>
+
+                </div>
+
+              </div>
+              <div class="px-4">
+                <h3><a href="#">Wild West Hoodie</a></h3>
+                <div class="mb-3" style="display: inline-flex">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span
+                        class="icon-star text-warning"></span></a> 5.0</span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a>
+                    29</span>
+                </div>
+                <p class="mb-4">1000$</p>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-trash-alt"></i></button>
+                <button onclick="editDiv()" style="background-color:transparent;border: none"> <i
+                    class="fas fa-edit"></i></button>
+
+                <div class="popup">
+                  <p> <button data-toggle="collapse" data-target="#demo"
+                      style="background-color: transparent;color: black" onclick="myFunction()"><i
+                        class="fas fa-percent"></i></button></p>
+
+
+                  <div class="popuptext" id="myPopup  discountValue" class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton" class="dropdown" id="notifdisplay" data-aos="fade-up"
+                    style="height: 300px;position: absolute;overflow-y: scroll;background-color: white !important;border: 2px solid #21252952;">
+                    <div style="position: sticky;top: 0px;border-bottom: 1px solid #2125295c;margin-bottom: 10px;
+                                          bottom: 0px;background-color: white">
+                      <h6 style="color: black;">Disscount</h6>
+                    </div>
+                    <li
+                      style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+                      <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i
+                          style="color: black;" class="fas fa-minus-circle"></i></div>
+                      <div class="col-sm-10"
+                        style="
+                                           border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+                        <div> <img src="images/Discount-icon.png" title="44%" alt="">
+                          <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">22/33/2000</p>
+                        </div>
+                        <div>
+                          <p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p>
+                        </div>
+                      </div>
+                    </li>
+
+                  </div>
+
+                </div>
+
+
+
+
+                <div style="display: inline-flex">
+                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-sm-4 col-xs-11 col-md-3 col-lg-3 col-xl-2" style="margin-right:70px;">
+          <div class="product-item">
+            <div class="maincontainer">
+
+              <div class="thecard">
+
+                <div class="thefront  ">
+
+                  <img src="images/burger.jpg" alt="Image" class="img-fluid" style="height:200px ;">
+
+
+                </div>
+                <div class="back">
+
+                  <h6 class="font-weight-bold h5" style="color: black">Ingredients</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    ores quasi accusantiu iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+                  <h6 class="font-weight-bold h5" style="color: black">calory</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    1000!</p>
+
+                </div>
+
+              </div>
+              <div class="px-4">
+                <h3><a href="#">Wild West Hoodie</a></h3>
+                <div class="mb-3" style="display: inline-flex">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span
+                        class="icon-star text-warning"></span></a> 5.0</span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a>
+                    29</span>
+                </div>
+                <p class="mb-4">1000$</p>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-trash-alt"></i></button>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-edit"></i></button>
+
+                <div style="display: inline-flex">
+                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-sm-6 col-xs-11 col-md-3 col-lg-3 col-xl-2 " style="margin-right:70px;">
+          <div class="product-item">
+            <div class="maincontainer">
+
+              <div class="thecard">
+
+                <div class="thefront ">
+
+                  <img src="images/burger.jpg" alt="Image" class="img-fluid" style="height:200px ;">
+
+
+                </div>
+                <div class="back">
+
+                  <h6 class="font-weight-bold h5" style="color: black">Ingredients</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    ores quasi accusantiu iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+                  <h6 class="font-weight-bold h5" style="color: black">calory</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    1000!</p>
+
+                </div>
+
+              </div>
+              <div class="px-4">
+                <h3><a href="#">Wild West Hoodie</a></h3>
+                <div class="mb-3" style="display: inline-flex">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span
+                        class="icon-star text-warning"></span></a> 5.0</span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a>
+                    29</span>
+                </div>
+                <p class="mb-4">1000$</p>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-trash-alt"></i></button>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-edit"></i></button>
+
+                <div style="display: inline-flex">
+                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="col-sm-6 col-sm-6 col-xs-11 col-md-3 col-lg-3 col-xl-2" style="margin-right:70px;">
+          <div class="product-item">
+            <div class="maincontainer">
+
+              <div class="thecard">
+
+                <div class="thefront ">
+
+                  <img src="images/burger.jpg" alt="Image" class="img-fluid" style="height:200px ;">
+
+
+                </div>
+                <div class="back">
+
+                  <h6 class="font-weight-bold h5" style="color: black">Ingredients</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    ores quasi accusantiu iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+                  <h6 class="font-weight-bold h5" style="color: black">calory</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    1000!</p>
+
+                </div>
+
+              </div>
+              <div class="px-4">
+                <h3><a href="#">Wild West Hoodie</a></h3>
+                <div class="mb-3" style="display: inline-flex">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span
+                        class="icon-star text-warning"></span></a> 5.0</span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a>
+                    29</span>
+                </div>
+                <p class="mb-4">1000$</p>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-trash-alt"></i></button>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-edit"></i></button>
+
+                <div style="display: inline-flex">
+                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-sm-6 col-xs-11 col-md-3 col-lg-3 col-xl-2 " style="margin-right:70px;">
+          <div class="product-item">
+            <div class="maincontainer">
+
+              <div class="thecard">
+
+                <div class="thefront ">
+
+                  <img src="images/burger.jpg" alt="Image" class="img-fluid" style="height:200px ;">
+
+
+                </div>
+                <div class="back">
+
+                  <h6 class="font-weight-bold h5" style="color: black">Ingredients</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    ores quasi accusantiu iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+                  <h6 class="font-weight-bold h5" style="color: black">calory</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    1000!</p>
+
+                </div>
+
+              </div>
+              <div class="px-4">
+                <h3><a href="#">Wild West Hoodie</a></h3>
+                <div class="mb-3" style="display: inline-flex">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span
+                        class="icon-star text-warning"></span></a> 5.0</span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a>
+                    29</span>
+                </div>
+                <p class="mb-4">1000$</p>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-trash-alt"></i></button>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-edit"></i></button>
+
+                <div style="display: inline-flex">
+                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="col-sm-6 col-xs-11 col-md-3 col-lg-3 col-xl-2" style="margin-right:70px;">
+          <div class="product-item">
+            <div class="maincontainer">
+
+              <div class="thecard">
+
+                <div class="thefront ">
+
+                  <img src="images/burger.jpg " alt="Image" class="img-fluid" style="height:200px ;">
+
+
+                </div>
+                <div class="back">
+
+                  <h6 class="font-weight-bold h5" style="color: black">Ingredients</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    ores quasi accusantiu iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+                  <h6 class="font-weight-bold h5" style="color: black">calory</h6>
+
+                  <p style="color: black"><i class="fas fa-apple-alt" style="color: darkgreen;font-weight: 900;"></i>
+                    1000!</p>
+
+                </div>
+
+              </div>
+              <div class="px-4">
+                <h3><a href="#">Wild West Hoodie</a></h3>
+                <div class="mb-3" style="display: inline-flex">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span
+                        class="icon-star text-warning"></span></a> 5.0</span>
+                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a>
+                    29</span>
+                </div>
+                <p class="mb-4">1000$</p>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-trash-alt"></i></button>
+                <button style="background-color:transparent;border: none"> <i class="fas fa-edit"></i></button>
+
+                <div style="display: inline-flex">
+                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <h2 class="section-title mb-3 text-center">Add Meal Form</h2>
+    <h3 class="section-sub-title text-center"> Fill Form</h3>
+    <div class="container"
+      style="padding-left: 9%;margin-bottom: 70px;background-color: white;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px;">
+        <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Meal
+          Name</label>
+        <textarea id="mealNameRest" class="form-control is-invalid" id="validationTextarea" placeholder="Meal Name" style="background-color: #ffffffb3;border-color: black !important;margin-left: 15px;border: none;
+    /* border-bottom: black !important; */height: 37px;
+    border-bottom: 1px solid black;"></textarea>
+        <!---    <div class="invalid-feedback">
+         <label for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>  --->
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px;">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Price</label>
+        <textarea id="mealPriceRest" class="form-control is-invalid" id="validationTextarea" placeholder="Price" style="border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */height: 37px;
+    border-bottom: 1px solid black;border-color: black !important;margin-left: 15px;"></textarea>
+        <!---    <div class="invalid-feedback">
+         <label for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>  --->
+      </div>
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px;">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Ingrediant</label>
+        <textarea id="mealIngrediantRest" class="form-control is-invalid" id="validationTextarea" placeholder="Meal Name"
+          style="background-color: #ffffffb3;border-color: black !important;margin-left: 15px;border: none;
+    /* border-bottom: black !important; */height: 37px;
+    border-bottom: 1px solid black;"></textarea>
+        <!---    <div class="invalid-feedback">
+         <label for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>  --->
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px;">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Calory</label>
+        <textarea id="mealCaloryRest" class="form-control is-invalid" id="validationTextarea" placeholder="Price" style="border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */height: 37px;
+    border-bottom:1px solid black;border-color: black !important;margin-left: 15px;"></textarea>
+        <!---    <div class="invalid-feedback">
+         <label for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>  --->
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px;">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Type </label>
+
+        <select id="mealTypeRest" class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */height: 35px;
+  border-bottom:1px solid black;
+  margin-left: 15px;">
+          <option value="">Choose Period</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 col-xs-12 " style="display: inline-block;margin-bottom:20px">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">choose image</label>
+
+        <input id="mealImageRest" type="file" style="border: none;background-color: #ffffffb3;height: 48px;width: 100%;
+    /* border-bottom: black !important; */height: 35px;
+    border-bottom: 1px solid black;border-color: black !important;margin-left: 15px;">
+      </div>
+
+
+
+      <div >
+        <label id="invalid-feedback_addMealForm" style="display: none; margin-left: 15px;color: red;font-size: 5px"> Please enter a message in the
+          textarea.</label>
+      </div>
+      <a onclick="AddMealRole()" class="btn btn-black mr-1 rounded-0 "
+        style="margin-left:37%;display:inline-block;margin-bottom: 15px;">submit form</a>
+      </form>
+    </div>
+<style>
+ 
+@media (max-width: 600px){
+#basket-cart{
+margin-left: 5%;
+}}
+@media (max-width: 700px){
+#basket-cart{
+margin-left: 15%;
+}}
+</style>
+    <h2 class="section-title mb-3 text-center">Customer Orders</h2>
+    <h3 class="section-sub-title text-center"> Orders</h3>
+    <div class="container" id="basket-cart" style=" height: 415px;width: 100%;
+          margin-top:200px; background-color:transparent; margin-top: 72px;margin-bottom:80px  ">
+      <div style="margin-bottom: 270px;width: 100%;">
+        <form class="cart_bas row"
+          style="border-left: 2px solid rgba(0, 0, 0, 0.8);overflow-y: scroll;overflow-x: scroll;background-color: white;height: 415px;margin-left:3%;;">
+
+          <table style="width: 100%" id="resturantCustomerOrders">
+            <tr style="background-color: green">
+
+<th>UserName</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Product</th>
+              <th>Amount</th>
+              <th>Discount</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Extra's</th>
+              <th>Address</th>
+              <th>is Ready</th>
+
+
+            </tr>
+           
+          </table>
+
+        </form>
+      </div>
+    </div>
+
+    <h2 class="section-title mb-3 text-center">Add Discount</h2>
+    <h3 class="section-sub-title text-center">Discount</h3>
+    <div class="container  "
+      style="padding-left: 9%;margin-bottom: 70px;background-color: white;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Discount Value
+        </label>
+
+        <select id="valueDis" class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom:1px solid black;height: 35px;
+  margin-left: 15px;">
+          <option value="">Choose Period</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Meal</label>
+
+        <select id="mealDis" class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom: 1px solid black;height: 35px;
+  margin-left: 15px;">
+          <option value="">Choose Type</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block"
+        style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+        <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Date
+          Start</label>
+        <input id="dateSrartDis" type="date" class="form-control is-invalid" id="validationTextarea"
+          placeholder="Meal name" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */
+    border-bottom: 1px solid black;height: 35px;
+    margin-left: 15px;"></input>
+
+      </div>
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block"
+        style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+        <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Date
+          End</label>
+        <input id="dateEndDis" type="date" class="form-control is-invalid" id="validationTextarea"
+          placeholder="Meal name" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */
+    border-bottom:1px solid black;height: 35px;
+    margin-left: 15px;"></input>
+
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block"
+      style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+      <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Time
+        Start</label>
+      <input id="timeSrartDis" type="time" class="form-control is-invalid" id="validationTextarea"
+        placeholder="Meal name" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom: 1px solid black;height: 35px;
+  margin-left: 15px;"></input>
+
+    </div>
+
+    <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block"
+      style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+      <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Time
+        End</label>
+      <input id="timeEndDis" type="time" class="form-control is-invalid" id="validationTextarea"
+        placeholder="Meal name" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom:1px solid black;height: 35px;
+  margin-left: 15px;"></input>
+
+    </div>
+      <div >
+        <label id="invalid-feedback_add_DiscountForm" style="display: none; margin-left: 15px;color: red;font-size: 5px"> Please enter a message in the
+          textarea.</label>
+      </div>
+      <a onclick="invalid_feedback_add_DiscountForm()" class="btn btn-black mr-1 rounded-0 text-center"
+        style="margin-top: 10px;margin-left: 36.96%;margin-bottom: 15px;">submit form</a>
+
+      </form>
+    </div>
+
+
+    <!--CART-->
+    <!----
+   <h2 class="section-title mb-3 text-center">Resturant Financial Accounts </h2>
+   <h3 class="section-sub-title text-center"> resturant</h3>
+   <div class="container col-xs-3" id="basket-cart" style=" height: 415px;width: 100%;
+   margin-top:200px; background-color:transparent; margin-top: 72px;margin-bottom:80px;  ">
+   <div  style="margin-bottom: 270px;">  
+   <form class="cart_bas" style="border-left: 2px solid rgba(0, 0, 0, 0.8);overflow-y: scroll;overflow-x: scroll;background-color: white;height: 415px;margin-left:5%;;" >
+   
+   <table style="width: 100%">
+<tr style="background-color: green">
+
+<th >Product</th>
+<th >Price</th>
+
+<th  >Ingrediants  </th>
+<th  >calory</th>
+<th>Available?</th>
+
+</tr>
+<tr style="border: solid thin;background-color: rgba(0, 0, 0, 0.04)">
+
+<td >green tea</td>
+
+<td >30$</td>
+<td >extra salad and tomato affge </td>
+<td > 1222</td>
+<td style="width: 90px;height: 100px;"><i class="fas fa-check-circle"></i></td>
+</tr>
+<tr>
+  <td >green tea</td>
+
+  <td >30$</td>
+  <td >extra salad and tomato affge </td>
+  <td > 1222</td>
+  <td style="width: 90px;height: 100px;"><i class="fas fa-check-circle"></i></td>
+  </tr>
+
+</table>
+
+</form>
+</div> </div>
+
+
+
+
+
+
+
+<h2 class="section-title mb-3 text-center">Remove Discount</h2>
+<h3 class="section-sub-title text-center">Discount</h3>
+<div class="container" style="padding-left: 9%;margin-bottom: 70px;background-color: white;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+  
+   
+  
+ 
+  <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block" >
+    <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Meal </label>
+  
+  <select class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom: 1px solid black;height: 35px;
+  margin-left: 15px;">
+    <option value="">Choose Period</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <div class="invalid-feedback">Example invalid custom select feedback</div>
+  </div>
+  
+  <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block" >
+    <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Date Start-End</label>
+
+  <select class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom: 1px solid black;height: 35px;
+  margin-left: 15px;">
+    <option value="">Choose Type</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <div class="invalid-feedback">Example invalid custom select feedback</div>
+</div>
+ 
+ 
+<a href="#" class="btn btn-black mr-1 rounded-0 text-center"style="margin-top:10px;margin-left: 36.96%;margin-bottom: 15px;">submit form</a>
+</form>
+</div>
+
+
+
+------>
+
+    <h2 class="section-title mb-3 text-center"> Earnings</h2>
+    <h3 class="section-sub-title text-center"> service </h3>
+    <div class="container"
+      style="padding-left: 9%;margin-bottom: 70px;background-color: white;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+
+
+      <!--- <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block" >
+    <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Choose Service</label>
+
+  <select id="EarningsCustomersNumberService" class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom: 1px solid black;height: 35px;
+  margin-left: 15px;">
+    <option value="">Choose Type</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <div class="invalid-feedback">Example invalid custom select feedback</div>
+</div> --->
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block"
+        style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+        <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Date
+          Start</label>
+        <input id="EarningsCustomersNumberDateStart" type="date" class="form-control is-invalid" id="validationTextarea"
+          style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom: 1px solid black;height: 25px;
+  margin-left: 15px;"></input>
+
+      </div>
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block"
+        style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+        <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Date
+          End</label>
+        <input id="EarningsCustomersNumberDateEnd" type="date" class="form-control is-invalid" id="validationTextarea"
+          style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom:1px solid black;height: 25px;
+  margin-left: 15px;"></input>
+
+      </div>
+
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block"
+        style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Result value</label>
+        <div>
+          <label id="EarningsCustomersNumberResult" for="" style="margin-left: 15px;"> result apear in this
+            textarea.</label>
+        </div>
+      </div>
+      <br>
+      <a onclick="Earning()" class="btn btn-black mr-1 rounded-0 text-center"
+        style="margin-top:10px;margin-left: 36.96%;margin-bottom: 15px;">submit form</a>
+      </form>
+    </div>
+
+
+    <!----
+<h2 class="section-title mb-3 text-center">Best-selling meals</h2>
+<h3 class="section-sub-title text-center">meals</h3>
+<div class="container" style="padding-left: 9%;margin-bottom: 70px;background-color: white;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+        
+  <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block" style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+    <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Date Start</label>
+    <input type="date" class="form-control is-invalid" id="validationTextarea" placeholder="Meal name" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */
+    border-bottom: 1px solid black;height: 35px;
+    margin-left: 15px;"></input>
+    
+  </div>
+  
+  <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block" style="margin-right:70px;height:62px;margin-bottom: 2.6rem;margin-top: 35px">
+    <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Date End</label>
+    <input type="date" class="form-control is-invalid" id="validationTextarea" placeholder="Meal name" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */
+    border-bottom: 1px solid black;height: 35px;
+    margin-left: 15px;"></input>
+    
+  </div>
+    
+<div data-aos="fade-up" class="   col-6"  data-aos="fade-up"  style="margin-top: 15px;margin-left: 18%;margin-bottom: 10px;overflow-y: scroll;height: 140px;background-color: white !important;border: 2px solid #21252952;">
+ 
+ 
+ 
+ <div data-aos="fade-up" style="position: sticky;top: 0px;border-bottom: 1px solid #2125295c;margin-bottom: 10px;
+  bottom: 0px;background-color: white"><h6  style="color: black;"><h6>Best Selling Meals</h6></div>
+    <li style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+   <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i style="font-size: 16px" class="fas fa-minus-circle"></i></div>
+   <div  class="col-sm-10" style="margin-left: 17px;
+   border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+   <div > <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first notification</p></div>
+   <div><p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p></div>
+  </div>
+  </li>
+  <li style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+    <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i style="font-size: 16px" class="fas fa-minus-circle"></i></div>
+    <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+    <div > <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first notification</p></div>
+    <div><p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p></div>
+   </div>
+   </li>
+   <li style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+    <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i style="font-size: 16px" class="fas fa-minus-circle"></i></div>
+    <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+    <div > <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first notification</p></div>
+    <div><p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p></div>
+   </div>
+   </li>
+   <li style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+    <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i style="font-size: 16px" class="fas fa-minus-circle"></i></div>
+    <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+    <div > <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first notification</p></div>
+    <div><p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p></div>
+   </div>
+   </li>
+   <li style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+    <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i style="font-size: 16px" class="fas fa-minus-circle"></i></div>
+    <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+    <div > <p style="font-weight: bold;font-size: 12px;margin-bottom: 0px;color: black">Hello im the first notification</p></div>
+    <div><p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p></div>
+   </div>
+   </li>
+   <li style="margin-bottom: 10px;list-style: none;border-bottom: 2px solid rgba(0, 0, 0, 0);border-bottom: 1px solid #21252959;padding-bottom: 10px; ">
+    <div class="col-sm-1" style="display: inline-block;margin-left: -9px;top: -11px;"> <i style="font-size: 16px" class="fas fa-minus-circle"></i></div>
+    <div class="col-sm-10" style="margin-left: 17px;
+    border-left: 1px solid #2125295c;display: inline-block;border-left: 1px solid #2125295c;">
+    <div > <p style="font-size: 12px;margin-bottom: 0px;color: black;font-weight: bold;">Hello im the first notification</p></div>
+    <div><p style="margin-bottom: 0px;font-size: 2px">22/33/2000</p></div>
+   </div>
+   </li>
+  
+  </div>
+  
+ 
+  <a href="#" class="btn btn-black mr-1 rounded-0 text-center"style="margin-top:10px;margin-left: 36.96%;margin-bottom: 15px;">submit form</a>
+</form>
+
+</div>
+
+--->
+
+    <h2 class="section-title mb-3 text-center">Subscription Form</h2>
+    <h3 class="section-sub-title text-center">fill form</h3>
+
+    <div id="SubscriptionForm" data-aos="fade-up" data-aos-delay="200" \] class="container"
+      style="padding-left: 9%;margin-bottom: 70px;background-color: white;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+
+
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px">
+        <label for="validationTextarea" style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">User
+          Name</label>
+        <textarea id="SubscriptionFormUserName" class="form-control is-invalid" id="validationTextarea" type="text"
+          placeholder="UserName" style="background-color: #ffffffb3;border-color: black !important;margin-left: 15px;border: none;
+    /* border-bottom: black !important; */
+    border-bottom: 1px solid black;height: 37px;"></textarea>
+        <div class="invalid-feedback" id="invalid_userDiv" style="display:none;">
+          <label id="invalid_user" for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Mobile Phone</label>
+        <textarea id="SubscriptionFormMobilePhone" class="form-control is-invalid" id="validationTextarea"
+          placeholder="Mobile Phone" style="border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */height: 37px;
+    border-bottom: 1px solid black;border-color: black !important;margin-left: 15px;"></textarea>
+        <div style="display:none;" class="invalid-feedback" id="mobile_invalidDiv">
+          <label id="mobile_invalid" for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+        </div>
+      </div>
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom: 20px">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Subscription
+          Period </label>
+
+        <select class="custom-select" id="SubscriptionFormPeriod" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */
+    border-bottom: 1px solid black;height: 35px;
+    margin-left: 15px;">
+          <option value="">Choose Period</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom:20px">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;margin-right: 15px;font-size: 19px;">Subscription
+          Type </label>
+
+        <select id="SubscriptionType" class="custom-select" style="border-color: black !important;height: 62px;border: none;background-color: #ffffffb3;
+  /* border-bottom: black !important; */
+  border-bottom: 1px solid black;height: 35px;
+  margin-left: 15px;">
+          <option value="">Choose Type</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+      <div class=" col-lg-5 col-xl-5 col-md-10 " style="display: inline-block;margin-bottom:20px">
+        <label for="validationTextarea"
+          style="color: black;font-weight: bolder;margin-left: 15px;font-size: 19px;">Password</label>
+        <textarea id="SubscriptionFormPass" class="form-control is-invalid" type="Password" id="validationTextarea"
+          placeholder="Street" style="border: none;background-color: #ffffffb3;
+    /* border-bottom: black !important; */height: 37px;
+    border-bottom: 1px solid black;border-color: black !important;margin-left: 15px;"></textarea>
+
+      </div>
+      <br>
+
+      <div class="invalid-feedback" id="invalid_Div" style="display:none;">
+        <label id="invalid" for="" style="margin-left: 15px;"> Please enter a message in the textarea.</label>
+      </div>
+
+      <a href="#SubscriptionForm" onclick="subRoleRest()" class="btn btn-black mr-1 rounded-0 text-center"
+        style="margin-left: 36%;margin-bottom: 15px;">submit form</a>
+      </form>
+
+    </div>
+
+    <!----
+<h2 class="section-title mb-3 text-center">Subscriper </h2>
+<h3 class="section-sub-title text-center">accept requests</h3>
+<div class="container" id="basket-cart" style=" height: 415px;width: 100%;
+margin-top:200px; background-color:transparent; margin-top: 72px;margin-bottom: 80px ">
+<div class="col-sm-12" style="margin-bottom: 270px;margin-left: 1%;">  
+<form class="cart_bas" style="overflow-y: scroll;overflow-x: scroll;background-color:white;height: 415px;border-left: 2px solid rgba(0, 0, 0, 0.8);" >
+
+<table style="width: 100%;background-color:transparent;">
+<tr  style="background-color: green">
+<th ><i class="fas fa-eye"></i></th>
+<th style="color: white" >UserName</th>
+<th style="color: white">City</th>
+<th style="color: white">Mobile Phone</th>
+<th  style="color: white">Request Date</th>
+<th  style="color: white">Request Time</th>
+<th  style="color: white">Subscription Type</th>
+<th  style="color: white">accept?</th>
+
+<th style="color: white">Amount paid</th>
+<th style="color: white">Financial dues</th>
+</tr>
+<tr style="border: solid thin;background-color: rgba(0, 0, 0, 0.04); display:table-row;vertical-align:inherit;">
+<td> 1</td>
+<td >Baraa Omar</td>
+<td >Tulkarm</td>
+
+<td >0599278999</td>
+<td >22/2/2344</td>
+<td >3 am</td>
+<td >diet</td>
+<td style="width: 90px;height: 100px;"><i style="color: green" class="fas fa-check-circle"></i></td>
+<td>20$</td>
+<td>33$</td>
+</tr>
+<tr  style="border: solid thin;">
+  <td>2</td>
+  <td >Baraa Omar</td>
+  <td >Tulkarm</td>
+  
+  <td >0599278999</td>
+  <td >22/2/2344</td>
+  <td >3 am</td>
+  <td >diet</td>
+  <td style="width: 90px;height: 100px;"><i style="color: green" class="fas fa-check-circle"></i></td>
+  <td>20$</td>
+  <td>33$</td>
+</tr>
+
+</table>
+
+</form>
+</div> 
+
+
+</div>
+--->
+    <h2 class="section-title mb-3 text-center">Subscription Period </h2>
+    <h3 class="section-sub-title text-center">record</h3>
+    <div class="container col-xl-6 col-lg-9" id="basket-cart" style=" height: 415px;width: 100%;
+margin-top:200px; background-color:transparent; margin-top: 72px;margin-bottom: 80px ">
+      <div class="col-sm-12" style="margin-bottom: 270px;margin-left: 1%;">
+        <form class="cart_bas"
+          style="border-left: 2px solid rgba(0, 0, 0, 0.8);overflow-y: scroll;overflow-x: scroll;background-color:transparent;height: 415px;">
+
+          <table id="subPeriodRest" style="width: 100%;background-color: transparent">
+            <tr style="background-color: green">
+              <th><i class="fas fa-eye"></i></th>
+
+              <th style="color: white">UserName</th>
+              <th>Request Date/Time</th>
+
+              <th>Accepted Date/Time</th>
+
+              <th>type</th>
+
+
+
+              <th> paid</th>
+              <th>dues</th>
+              <th></th>
+            </tr>
+            <tr style="border: solid thin;background-color: rgba(0, 0, 0, 0.04)">
+              <td>1 <i class="fas fa-check-circle"></i></td>
+              <td>Baraa omar</td>
+              <td style="padding-left: 8%;"><i class="far fa-calendar-alt" title="1/1/2020"></i>
+                <i class="far fa-clock" title="3am"></i></td>
+
+
+              <td style="padding-left: 8%;"><i class="far fa-calendar-alt" title="1/1/2020"></i>
+                <i class="far fa-clock" title="3am"></i></td>
+              <td>resturant</td>
+
+
+              <td>22$</td>
+              <td>22$</td>
+              <td> <i class="fas fa-map-marker-alt" title="Tulkarm"></i>
+                <i class="fab fa-whatsapp" title="0599249888"></i>
+              </td>
+            </tr>
+
+            <tr style="border: solid thin;background-color: rgba(0, 0, 0, 0.04)">
+              <td>1 <i class="fas fa-check-circle"></i></td>
+              <td>Baraa omar</td>
+              <td style="padding-left: 8%;"><i class="far fa-calendar-alt" title="1/1/2020"></i>
+                <i class="far fa-clock" title="3am"></i></td>
+
+
+              <td style="padding-left: 8%;"><i class="far fa-calendar-alt" title="1/1/2020"></i>
+                <i class="far fa-clock" title="3am"></i></td>
+              <td>resturant</td>
+
+
+              <td>22$</td>
+              <td>22$</td>
+              <td> <i class="fas fa-map-marker-alt" title="Tulkarm"></i>
+                <i class="fab fa-whatsapp" title="0599249888"></i>
+              </td>
+            </tr>
+            </tr>
+
+
+          </table>
+
+        </form>
+      </div>
+      <!--CART-->
+
+    </div>
+
+  </div>
+  <!--end of site wrap-->
+
+
+
+
+
+
+
+  </div>
+  </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+  <!--  <div class="site-blocks-cover inner-page-cover overlay get-notification"  style="background-image: url(images/hero_2.jpg); background-attachment: fixed;" data-aos="fade">
+      <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+          <form class="col-md-7" method="post">
+            <h2>Get notified on each updates.</h2>
+            <div class="d-flex mb-4">
+              <input type="text" class="form-control rounded-0" placeholder="Enter your email address">
+              <input type="submit" class="btn btn-white btn-outline-white rounded-0" value="Subscribe">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi veniam doloremque ducimus tempora.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+ 
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-6 text-center">
+            <h3 class="section-sub-title">Awesome Products</h3>
+            <h2 class="section-title mb-3">Featured Products</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+          </div>
+        </div>
+      -->
+  <!----   <div class="bg-white py-4">
+          <div class="row mx-4 my-4 product-item-2 align-items-start">
+            <div class="col-md-6 mb-5 mb-md-0 order-1 order-md-2">
+              <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
+            </div>
+           
+            <div class="col-md-5 mr-auto product-title-wrap order-2 order-md-1">
+              <span class="number">02.</span>
+              <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
+              <p class="mb-4">Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?</p>
+              
+              <div class="mb-4"> 
+                <h3 class="text-black font-weight-bold h5">Price:</h3>
+                <div class="price"><del class="mr-2">$269.00</del> $69.00</div>
+              </div>
+              <p>
+                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">View Details</a>
+                <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Add To Cart</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      -->
+  </div>
+  </div>
+
+  <!--
+    <div class="site-section" id="about-section">
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-md-8 mb-5 mb-lg-0 position-relative">
+            <img src="images/about_1.jpg" class="img-fluid" alt="Image">
+            <div class="experience">
+              <span class="year">Trusted Merchant</span>
+              <span class="caption">for 50 years</span>
+            </div>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h3 class="section-sub-title">Merchant Company</h3>
+            <h2 class="section-title mb-3">About Us</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
+            <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+
+  <!---
+    <div class="site-section border-bottom" id="team-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">Team</h3>
+            <h2 class="section-title mb-3">Leadership</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <div class="person text-center">
+              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
+              <h3>John Rooster</h3>
+              <p class="position text-muted">Co-Founder, President</p>
+              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+              <ul class="ul-social-circle">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <div class="person text-center">
+              <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
+              <h3>Tom Sharp</h3>
+              <p class="position text-muted">Co-Founder, COO</p>
+              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+              <ul class="ul-social-circle">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <div class="person text-center">
+              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
+              <h3>Winston Hodson</h3>
+              <p class="position text-muted">Marketing</p>
+              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+              <ul class="ul-social-circle">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+  <!--
+    <div class="site-blocks-cover overlay get-notification" id="special-section" style="background-image: url(images/hero_2.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
+      <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7 text-center">
+            <h3 class="section-sub-title">Special Promo</h3>
+            <h3 class="section-title text-white mb-4">Summer Sale</h3>
+            <p class="mb-5 lead">Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+            
+            <div id="date-countdown" class="mb-5"></div>
+
+            <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop Now</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  -->
+  <!---
+    <div class="site-section bg-light" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">Our Services</h3>
+            <h2 class="section-title mb-3">We Offer Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-pie_chart"></span></div>
+              <div>
+                <h3>Business Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div>
+              <div>
+                <h3>Market Analysis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div>
+              <div>
+                <h3>User Monitoring</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-beenhere"></span></div>
+              <div>
+                <h3>Seller Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-business_center"></span></div>
+              <div>
+                <h3>Financial Investment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div>
+              <div>
+                <h3>Financial Management</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  -->
+  <!---
+    <div class="site-section testimonial-wrap" id="testimonials-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">People Says</h3>
+            <h2 class="section-title mb-3">Testimonials</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_3.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+              </figure>
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              <p class="text-black"><strong>John Smith</strong></p>
+
+              
+            </div>
+          </div>
+          <div>
+            <div class="testimonial">
+              
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_2.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+              </figure>
+
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              
+              <p class="text-black"><strong>Robert Aguilar</strong></p>
+              
+              
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_4.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+              </figure>
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              <p class="text-black"><strong>Roger Spears</strong></p>
+
+              
+            </div>
+           
+          </div>
+
+          <div>
+            <div class="testimonial">
+              <figure class="mb-4 d-block align-items-center justify-content-center">
+                <div><img src="images/person_1.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+              </figure>
+              <blockquote class="mb-3">
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+              </blockquote>
+              <p class="text-black"><strong>Kyle McDonald</strong></p>
+
+              
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+
+  -->
+  <!--
+    <div class="site-section" id="blog-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">Blog</h3>
+            <h2 class="section-title mb-3">Blog Posts</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/model_1_bg.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+              <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <p><a href="#">Continue Reading...</a></p>
+            </div> 
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <p><a href="#">Continue Reading...</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/model_5_bg.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <p><a href="#">Continue Reading...</a></p>
+            </div> 
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  -->
+
+
+  <!--
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h3 class="section-sub-title">Contact Form</h3>
+            <h2 class="section-title mb-3">Get In Touch</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7 mb-5">
+
+            
+
+            <form action="#" class="p-5 bg-white">
+              
+              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control rounded-0">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label> 
+                  <input type="subject" id="subject" class="form-control rounded-0">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-black rounded-0 py-3 px-4">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+        
+        </div>
+        
+      </div>
+    </div>
+  -->
+
+
+
+  <footer class="site-footer bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="footer-heading mb-4">About Us</h2>
+              <p> Following the healthy food life style is a passion, eating it is a pleasure and sticking to it leads
+                you to a wild table full of different species of tasty food which protect you from diseases.. -</p>
+            </div>
+            <div class="col-md-3 ">
+              <h2 class="footer-heading mb-4">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="footer-heading mb-4">Follow Us</h2>
+              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ml-auto">
+          <h2 class="footer-heading mb-4">Programmer</h2>
+          <strong class="text-black mb-3 d-inline-block">Bara'a Omar</strong>
+
+
+          <h2 class="footer-heading mb-4">Follow Us</h2>
+          <div class="col-md-4" style="display: flex">
+            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="Login_v15/js/map-custom.js"></script>
+  <script src="javascript/OurMenue.js"></script>
+  <script src="javascript/AddMealForm.js"></script>
+  <script src="javascript/CustomerOrders.js"></script>
+  <script src="js/main.js"></script>
+  <script src="javascript/AddDiscount.js"></script>
+  <script src="javascript/subPeriodRest.js"></script>
+  <script src="javascript/SubscriptionForm.js"></script>
+  <script src="javascript/EarningsCustomersNumber.js"></script>
+</body>
+
+</html>

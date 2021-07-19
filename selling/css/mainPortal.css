@@ -1,0 +1,490 @@
+@media (max-width: 995px){
+    #img_about{
+      display: none !important;
+    }
+      }
+      @media (max-width: 767px){
+        #extraFoodMnueForm{
+  width: 50% ;
+  }}
+  @media (min-width: 1175px){
+    #extraFoodMnueForm{
+      padding-left: 3%;
+}}
+  @media (min-width: 768px){
+    #extraFoodMnueForm{
+width: 40% ;
+}}
+      #back_img_color::beforez{
+        position: absolute;content: "";
+    
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+      }
+      @media (max-width: 767px){
+        body > div > div.container > div{
+          margin-left: -9%;
+        }
+          }
+         
+          .login100-form-title {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+          
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          
+            padding: 7px 5px 7px 5px;
+          }
+          
+          .login100-form-title-1 {
+            font-family: Poppins-Bold;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+          }
+          .login100-form-title::before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+          }
+                    
+          .sett_back_img::before  {
+            content: "";
+            background:#49505730;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+      #img_about >img{
+        border: none !important;
+      }
+      .our-servic{
+        display: inline-flex;
+        overflow-x: scroll;
+      }
+      body > div > div.our-servic > div> img:hover{
+        border-width: 1px;
+      
+        border-color: olivedrab;
+          transition:  border  2s;
+      }
+      body > div > div.our-servic > div> img:hover{
+        border-width: 5px;
+      
+       
+      }
+      
+      @media (min-width: 0px){
+.col-xs-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40.0%;
+    flex: 0 0 40.0%;
+    max-width: 40.0%;
+}}
+
+  @media (min-width: 0px){
+    .col-xs-1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16%;
+        flex: 0 0 16%;
+        max-width: 16%;
+    }}
+    @media (min-width: 0px){
+      .col-xs-1 {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 16%;
+          flex: 0 0 16%;
+          max-width: 16%;
+      }}
+     
+  /* @media (min-width:1000px ){
+        #basket-cart{
+         margin-left: 25% !important;
+        }
+          }
+        */
+             
+       
+  @media (min-width: 0px){
+.col-xs-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+}}
+@media (min-width: 0px){
+  .col-xs-8 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }}
+@media (min-width: 0px){
+  .col-xs-6 {
+      -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 50% !important;
+      flex: 0 0 50% !important;
+      max-width: 50%  !important;
+  }}
+@media (min-width: 0px){
+  .col-xs-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%;
+  }}
+  @media (min-width: 0px){
+    .col-xs-11 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }}
+    @media (max-width: 580px){
+      .co-11 {
+          -webkit-box-flex: 0 ;
+          -ms-flex: 0 0 70% !important;
+          flex: 0 0 70% !important;
+          max-width: 70% !important;
+      }}
+    @media (max-width: 580px){
+      .xs{
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+          max-width: 50%;
+      }}
+      @media (max-width: 580px){
+        .sll{
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }}
+    @media (min-width: 767px){
+    .col-md-1 {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 14% !important;
+        flex: 0 0 14% !important;
+        max-width: 14% !important;
+    }}
+    @media (max-width: 861px){
+.col-md-5 {
+    -webkit-box-flex: 0 !important;;
+    -ms-flex: 0 0 41.66667% !important;;
+    flex: 0 0 50% !important;;
+    max-width: 50% !important;;
+}}
+@media (max-width: 861px){
+  col-md-4{
+      -webkit-box-flex: 0 !important;;
+      -ms-flex: 0 0 44% !important;;
+      flex: 0 0 44% !important;;
+      max-width: 44% !important;;
+  }}
+
+    .card:hover{
+      transform: rotateY(180deg);
+    }
+    /* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: none;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  /*position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  
+  color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+ /* background: #fafafa;
+  color: #333; */
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.cart_bas table tr td{
+  color: #000;
+  max-width: 100px;
+  font-size: 10px;
+}
+.cart_bas table tr th{
+  color: white;
+  background-color: black;
+ /*   font-weight: bolder;
+  font-size: 20px;
+ min-width:  180px;height: 50px;*/
+ padding: 3px 5px;
+ font-size: 14px;
+}
+.bold_{
+  font-weight: bolder;
+  color: #000;
+}
+td{
+  border-top: 1px solid #ddd;
+  
+  padding: 1px 5px;
+  display: table-cell;
+    vertical-align: inherit;
+}
+
+.sub_per th,.sub_per td{
+color: black;
+}
+body > div > div.table-responsive.sub_per > table > thead > tr>th {
+color: black;
+font-weight: bolder;
+font-size: 20px;
+}
+body > div > div.table-responsive.sub_per > table > tbody > tr {
+  color: black;
+  font-weight: bolder
+  }
+  */
+  .dil div{
+    margin: 10px;
+    margin-left: 30px;
+  }
+  .dil{
+    margin-bottom: 40px;
+  }
+  .dil div img{
+    margin-left: 30%;
+  }
+  .dil div p{
+   
+    color: #000;
+  }
+  body > div > div.dil > div > div:nth-child(3){
+height: 30px;;
+  }
+  body > div > div.dil > div > div:nth-child(2) > h4
+  {
+   
+    color: #000;
+    font-weight: bolder;
+  }
+  
+ 
+  body > div > div.dil > div> div:nth-child(3){
+height: 230px;
+overflow-y: scroll;
+margin-left: -2px;
+width: 100%;
+  }
+  
+ /*S body > div > div.dil > div:nth-child(1){
+    margin-left: 54px;
+  }hii here */
+  
+  .table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: 1px solid !important;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color:green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+  }
+  
+  @media (min-width: 768px) {
+    #ingr{
+margin-left: 20%;
+
+    }
+  }
+  @media (max-width: 767px) {
+    #ingr{
+margin-left: 15px;
+
+    }
+  }
+  body > div > div:nth-child(9) > div  {
+    border-color:transparent;
+    transition : background-color .4s !important;
+    transition : border-color .4s !important;
+  }
+  body > div > div:nth-child(9) > div:hover {
+    background-color: lightgrey !important;
+    border-color: #000 !important;
+  }
+  #products-section > div > div:nth-child(2) > div.col-lg-1.col-md-1.col-xl-1.col-sm-2.col-xs-1 > button{
+    margin-left: 20%;
+  }
+  .menue_icon button{
+    margin-left: 20%;
+  }
+  @media (min-width: 768px){
+  .bara99 {
+      -webkit-box-flex: 0  !important;
+      -ms-flex: 0 0 12.66667%  !important;;
+      flex: 0 0 12.66667%   !important;;
+      max-width: 12.66667%   !important;;
+  }}
+  /*  scroll for all page*/
+  ::-webkit-scrollbar {
+    width: 7px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px grey; 
+    border-radius: 20px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:black; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black; 
+  }
+  #basket-cart > div:nth-child(1) > form > table > tbody > tr{
+    border: solid thin;
+
+  }
+  @media (max-width: 991px){
+    #settAdm > div {
+      margin-left: 0px !important;
+    }}
+     @media (max-width: 991px){
+      body > div > div.col-xs-10.col-xl-6.col-lg-6.col-md-7.col-sm-8.container > div:nth-child(4)
+      {
+        margin-left: 0px !important;
+      }}
+     @media (max-width: 991px){
+        body > div > div.col-xs-10.col-xl-6.col-lg-6.col-md-7.col-sm-8.container > div:nth-child(6)
+        {
+          margin-left: 0px !important;
+        }}
